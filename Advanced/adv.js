@@ -14,6 +14,7 @@ var g = 15;
 var h = 8;
 var i = "1";
 
+
 var mult = (Number(f) * g * h * Number(i))
 console.log(mult)
 
