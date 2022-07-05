@@ -49,3 +49,19 @@ console.log(data1);
 let conk1 = "First";
 let conk2 = "Second";
 stringConk = conk1 + " " + conk2;
+
+//LENGTH
+console.log(conk1.length);
+
+//TO LOWER CASE - TO UPPER CASE
+console.log(conk1.toLowerCase());
+console.log(conk1.toUpperCase());
+console.log(conk1); //ORIGINAL string u cant change  - they are immutable , but u can reasign a new value to the same variable
+
+//INDEX of 
+let indexNum = conk1.indexOf("F");
+console.log(indexNum);
+
+//Reasign a new value to the same variable
+conk1 = conk1.toUpperCase();
+console.log(conk1);
