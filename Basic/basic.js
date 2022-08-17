@@ -265,3 +265,105 @@ console.log(sent);
 
 var senten = sentence.replaceAll("$", " ")
 console.log(senten);
+
+////freeCodeCamp///////////////////////////////
+//Finding a Remainder in JavaScript
+// The remainder operator % gives the remainder of the division of two numbers.
+
+// Example:
+// 5 % 2 = 1 because
+// Math.floor(5 / 2) = 2 (Quotient)
+// 2 * 2 = 4
+// 5 - 4 = 1 (Remainder)
+// Usage
+// In mathematics, a number can be checked to be even or odd by checking the remainder of the division of the number by 2.
+// Set remainder equal to the remainder of 11 divided by 3 using the remainder (%) operator.
+
+const remainder = 11 % 3;
+
+//Write Reusable JavaScript with Functions
+function functionName() {
+    console.log("Hello World");
+};
+functionName();
+
+//Passing Values to Functions with Arguments
+function functionWithArgs(param1, param2) {
+    console.log(param1 + param2);
+};
+functionWithArgs(1, 2);
+
+//Return a Value from a Function with Return
+function plusThree(num) {
+    return num + 3;
+}
+
+const answer = plusThree(5);
+
+
+function timesFive(argument) {
+    return argument * 5;
+}
+const newValue = timesFive(2);
+
+//Global Scope and Functions
+//Using let or const, declare a global variable named myGlobal outside of any function. Initialize it with a value of 10. Inside function fun1, assign 5 to oopsGlobal without using the var, let or const keywords.
+// Declare the myGlobal variable below this line
+let myGlobal = 10;
+
+function fun1() {
+    // Assign 5 to oopsGlobal Here
+    oopsGlobal = 5;
+}
+// Only change code above this line
+function fun2() {
+    var output = "";
+    if (typeof myGlobal != "undefined") {
+        output += "myGlobal: " + myGlobal;
+    }
+    if (typeof oopsGlobal != "undefined") {
+        output += " oopsGlobal: " + oopsGlobal;
+    }
+    console.log(output);
+}
+//Local Scope and Functions
+function myTest() {
+    const loc = "foo";
+    console.log(loc);
+}
+
+myTest();
+console.log(loc);
+
+
+function myLocalScope() {
+    // Only change code below this line
+    var myVar = 2;
+    console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+
+// Run and check the console
+// myVar is not defined outside of myLocalScope
+console.log('outside myLocalScope');
+
+//Global vs. Local Scope in Functions
+const someVar = "Hat";
+
+function myFun() {
+    const someVar = "Head";
+    return someVar;
+}
+// Setup
+const outerWear = "T-Shirt";
+
+function myOutfit() {
+    // Only change code below this line
+    const outerWear = "sweater";
+    // Only change code above this line
+    return outerWear;
+}
+
+myOutfit();
+//Assignment with a Returned Value
+ourSum = sum(5, 12);
