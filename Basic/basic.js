@@ -367,3 +367,52 @@ function myOutfit() {
 myOutfit();
 //Assignment with a Returned Value
 ourSum = sum(5, 12);
+
+//Write a function nextInLine which takes an array (arr) and a number (item) as arguments.
+// Add the number to the end of the array, then remove the first element of the array.
+// The nextInLine function should then return the element that was removed.
+
+function nextInLine(arr, item) {
+    // Only change code below this line
+    arr.push(item);
+    const removed = arr.shift();
+    return removed;
+    // Only change code above this line
+}
+
+// Setup
+const testArr = [1, 2, 3, 4, 5];
+
+// Display code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
+
+//Use Conditional Logic with If Statements
+//When the condition evaluates to true, the program executes the statement inside the curly braces. When the Boolean condition evaluates to false, the statement inside the curly braces will not execute.
+function test(myCondition) {
+    if (myCondition) {
+        return "It was true";
+    }
+    return "It was false";
+}
+
+test(true);
+test(false);
+
+function trueOrFalse(wasThatTrue) {
+    // Only change code below this line
+    if (wasThatTrue) {
+        return "Yes, that was true";
+    }
+    return "No, that was false";
+    // Only change code above this line
+}
+//Comparison with the Equality Operator
+//The most basic operator is the equality operator ==. The equality operator compares two values and returns true if they're equivalent or false if they are not. Note that equality is different from assignment (=), which assigns the value on the right of the operator to a variable on the left.
+function equalityTest(myVal) {
+    if (myVal == 10) {
+        return "Equal";
+    }
+    return "Not Equal";
+}
