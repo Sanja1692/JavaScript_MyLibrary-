@@ -410,9 +410,75 @@ function trueOrFalse(wasThatTrue) {
 }
 //Comparison with the Equality Operator
 //The most basic operator is the equality operator ==. The equality operator compares two values and returns true if they're equivalent or false if they are not. Note that equality is different from assignment (=), which assigns the value on the right of the operator to a variable on the left.
+// 1   ==  1  // true
+// 1   ==  2  // false
+// 1   == '1' // true  -- it perform a type conversion
+// "3" ==  3  // true
 function equalityTest(myVal) {
     if (myVal == 10) {
         return "Equal";
     }
     return "Not Equal";
 }
+
+//Comparison with the Strict Equality Operator
+// 3 ===  3  // true
+// 3 === '3' // false  -- does not perform a type conversion
+
+function testStrict(val) {
+    if (val === 7) { // Change this line
+        return "Equal";
+    }
+    return "Not Equal";
+}
+
+testStrict(10);
+//Practice comparing different values
+// In JavaScript, you can determine the type of a variable or a value with the typeof operator, as follows:
+// typeof 3
+// typeof '3'
+// typeof 3 returns the string number, and typeof '3' returns the string string.
+function compareEquality(a, b) {
+    if (a === b) { // Change this line
+        return "Equal";
+    }
+    return "Not Equal";
+}
+
+compareEquality(10, "10");
+
+//Comparison with the Inequality Operator -- as /==
+// 1 !=  2    // true
+// 1 != "1"   // false
+// 1 != '1'   // false
+// 1 != true  // false
+// 0 != false // false
+// Setup
+function testNotEqual(val) {
+    if (val != 99) { // Change this line
+        return "Not Equal";
+    }
+    return "Equal";
+}
+
+testNotEqual(10);
+//Comparison with the Strict Inequality Operator -- as /===
+3 !== 3 // false
+3 !== '3' // true
+4 !== 3 // true
+
+//Comparison with the Greater Than Operator
+5 > 3 // true
+7 > '3' // true
+2 > 3 // false
+    '1' > 9 // false
+function testGreaterThan(val) {
+    if (val > 100) { // Change this line
+        return "Over 100";
+    }
+    if (val > 10) { // Change this line
+        return "Over 10";
+    }
+    return "10 or Under";
+}
+testGreaterThan(10);
