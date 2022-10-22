@@ -297,9 +297,8 @@ functionWithArgs(1, 2);
 function plusThree(num) {
     return num + 3;
 }
-
 const answer = plusThree(5);
-
+// plusThree(3);
 
 function timesFive(argument) {
     return argument * 5;
