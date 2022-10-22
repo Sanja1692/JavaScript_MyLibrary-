@@ -332,8 +332,7 @@ function myTest() {
 }
 
 myTest();
-console.log(loc);
-
+// myTest;
 
 function myLocalScope() {
     // Only change code below this line
@@ -355,6 +354,7 @@ function myFun() {
 }
 // Setup
 const outerWear = "T-Shirt";
+myFun;
 
 function myOutfit() {
     // Only change code below this line
@@ -365,7 +365,7 @@ function myOutfit() {
 
 myOutfit();
 //Assignment with a Returned Value
-ourSum = sum(5, 12);
+// ourSum = sum(5, 12);
 
 //Write a function nextInLine which takes an array (arr) and a number (item) as arguments.
 // Add the number to the end of the array, then remove the first element of the array.
