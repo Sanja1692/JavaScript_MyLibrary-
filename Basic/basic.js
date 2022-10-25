@@ -489,12 +489,43 @@ function testGreaterOrEqual(val) {
     if (val >= 20) { // Change this line
         return "20 or Over";
     }
-
     if (val >= 10) { // Change this line
         return "10 or Over";
     }
-
     return "Less than 10";
 }
-
 testGreaterOrEqual(10);
+//Comparisons with the Logical And Operator
+function testLogicalAnd(val) {
+    // Only change code below this line
+    if (val <= 50 && val >= 25) {
+        return "Yes";
+    }
+    // Only change code above this line
+    return "No";
+}
+testLogicalAnd(10);
+
+//Combine the two if statements into one statement which returns the string Outside if val is not between 10 and 20, inclusive. Otherwise, return the string Inside.
+function testLogicalOr(val) {
+    // Only change code below this line
+    if (val < 10 || val > 20) {
+        return "Outside";
+    }
+    // Only change code above this line
+    return "Inside";
+}
+testLogicalOr(15);
+//Introducing Else Statements
+function testElse(val) {
+    let result = "";
+    // Only change code below this line
+    if (val <= 5) {
+        result = "5 or Smaller";
+    } else {
+        result = "Bigger than 5";
+    }
+    // Only change code above this line
+    return result;
+}
+testElse(4);
