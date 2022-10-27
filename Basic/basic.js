@@ -669,3 +669,11 @@ cc(3);
 cc(7);
 cc('K');
 cc('A');
+//Build JavaScript Objects
+const cat = {
+    "name": "Whiskers",
+    "legs": 4,
+    5: "five",
+    "tails": 1,
+    "enemies": ["Water", "Dogs"]
+};
