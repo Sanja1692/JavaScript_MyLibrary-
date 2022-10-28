@@ -9,3 +9,5 @@ More than just fancy website-interactivity, it supports useful concepts such as 
 While in the beginning, most of the usage of Javascript works with the client-side, nowadays it can work on the server-side too using an environment like NodeJS.
 
 All that being said, welcome to the wonderful world of JavaScript (JS).
+
+Adding code from freecodecamp.org
