@@ -677,3 +677,5 @@ const cat = {
     "tails": 1,
     "enemies": ["Water", "Dogs"]
 };
+//next challenge
+How to make
