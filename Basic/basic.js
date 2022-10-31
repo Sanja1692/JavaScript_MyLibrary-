@@ -696,3 +696,14 @@ const myDotNotation = {
 
 const prop1val = myDotNotation.prop1;
 const prop2val = myDotNotation.prop2;
+
+//Accessing Object Properties with Bracket Notation - when the property of the object you are trying to access has a space in its name
+const myBracketNotation = {
+    "Space Name": "Kirk",
+    "More Space": "Spock",
+    "NoSpace": "USS Enterprise"
+};
+
+myBracketNotation["Space Name"];
+myBracketNotation['More Space'];
+myBracketNotation["NoSpace"];
