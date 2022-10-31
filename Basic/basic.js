@@ -663,7 +663,6 @@ function cc(card) {
     }
     // Only change code above this line
 }
-
 cc(2);
 cc(3);
 cc(7);
@@ -683,7 +682,6 @@ const testObj = {
     "shirt": "jersey",
     "shoes": "cleats"
 };
-
 // Only change code below this line
 const hatValue = testObj.hat; // Change this line
 const shirtValue = testObj.shirt; // Change this line
@@ -693,7 +691,6 @@ const myDotNotation = {
     prop1: "val1",
     prop2: "val2"
 };
-
 const prop1val = myDotNotation.prop1;
 const prop2val = myDotNotation.prop2;
 
@@ -703,7 +700,45 @@ const myBracketNotation = {
     "More Space": "Spock",
     "NoSpace": "USS Enterprise"
 };
-
 myBracketNotation["Space Name"];
 myBracketNotation['More Space'];
 myBracketNotation["NoSpace"];
+
+//Accessing Object Properties with Variables - Another use of bracket notation on objects is to access a property which is stored as the value of a variable. This can be very useful for iterating through an object's properties or when accessing a lookup table.
+const dogs = {
+    Fido: "Mutt",
+    Hunter: "Doberman",
+    Snoopie: "Beagle"
+};
+const myDog = "Hunter";
+const myBreed = dogs[myDog];
+console.log(myBreed);
+//Updating Object Properties - You can use either dot or bracket notation to updateanypropertie at any time
+const myDog = {
+    "name": "Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
+};
+// Only change code below this line
+myDog.name = "Happy Coder" // myDog.["name"] = "Happy Coder";
+
+//Add New Properties to a JavaScript Object
+const myDog = {
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
+};
+myDog.bark = "woof"; //myDog.["bark"] = "woof";
+
+//Delete Properties from a JavaScript Object
+const myDog = {
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"],
+    "bark": "woof"
+};
+// Only change code below this line
+delete myDog.tails;
