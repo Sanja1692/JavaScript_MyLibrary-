@@ -743,7 +743,7 @@ const myDog = {
 // Only change code below this line
 delete myDog.tails;
 
-//Using Objects for Lookups
+//Using Objects for Lookups  ????????
 // Setup
 function phoneticLookup(val) {
     let result = "";
@@ -779,3 +779,5 @@ function phoneticLookup(val) {
 }
 
 phoneticLookup("charlie");
+
+//Testing Objects for Properties - check if the property of a given object exists or not.
