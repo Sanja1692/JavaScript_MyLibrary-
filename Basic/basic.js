@@ -840,3 +840,70 @@ const myStorage = {
     }
 };
 const gloveBoxContents = myStorage.car.inside["glove box"];
+//Accessing Nested Arrays
+const ourPets = [{
+        animalType: "cat",
+        names: [
+            "Meowzer",
+            "Fluffy",
+            "Kit-Cat"
+        ]
+    },
+    {
+        animalType: "dog",
+        names: [
+            "Spot",
+            "Bowser",
+            "Frankie"
+        ]
+    }
+];
+ourPets[0].names[1]; //"Fluffy"
+ourPets[1].names[0]; //"Spot"
+//or
+const myPlants = [{ //Using dot and bracket notation, set the variable secondTree to the second item in the trees list from the myPlants object.
+    type: "flowers",
+    list: [
+        "rose",
+        "tulip",
+        "dandelion"
+    ]
+}, {
+    type: "trees",
+    list: [
+        "fir",
+        "pine",
+        "birch"
+    ]
+}];
+const secondTree = myPlants[1].list[1];
+//Record Collection// Setup
+const recordCollection = {
+    2548: {
+        albumTitle: 'Slippery When Wet',
+        artist: 'Bon Jovi',
+        tracks: ['Let It Rock', 'You Give Love a Bad Name']
+    },
+    2468: {
+        albumTitle: '1999',
+        artist: 'Prince',
+        tracks: ['1999', 'Little Red Corvette']
+    },
+    1245: {
+        artist: 'Robert Palmer',
+        tracks: []
+    },
+    5439: {
+        albumTitle: 'ABBA Gold'
+    }
+};
+
+// Only change code below this line
+function updateRecords(records, id, prop, value) {
+    if (prop != "tracks" && value != " ") {
+        recordCollection.prop = value;
+    }
+    return records;
+}
+
+updateRecords(recordCollection, 5439, 'artist', 'ABBA'); //NOT FINISHED
