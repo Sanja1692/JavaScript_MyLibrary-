@@ -913,3 +913,18 @@ function updateRecords(records, id, prop, value) {
 }
 
 //Iterate with JavaScript While Loops
+const ourArray = [];
+let i = 0;
+
+while (i < 5) {
+    ourArray.push(i);
+    i++;
+}
+const myArray = []; //[0,1,2,3,4,5]
+
+// Only change code below this line
+let i = 5;
+while (i >= 0) {
+    myArray.push(i);
+    i--; //[5, 4, 3, 2, 1, 0]
+}
