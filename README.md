@@ -10,4 +10,6 @@ While in the beginning, most of the usage of Javascript works with the client-si
 
 All that being said, welcome to the wonderful world of JavaScript (JS).
 
+Adding exemples and exercises from codefactory
+
 Adding code from freecodecamp.org
