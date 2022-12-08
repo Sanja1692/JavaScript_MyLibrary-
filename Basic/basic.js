@@ -928,3 +928,16 @@ while (i >= 0) {
     myArray.push(i);
     i--; //[5, 4, 3, 2, 1, 0]
 }
+//FOR LOOPS
+const ourForArray = [];
+
+for (let i = 0; i < 5; i++) {
+    ourForArray.push(i);
+}
+// [0, 1, 2, 3, 4]
+const myForArray = [];
+
+// Only change code below this line
+for (let i = 1; i < 6; i++) {
+    myForArray.push(i); // [1, 2, 3, 4, 5]
+}
