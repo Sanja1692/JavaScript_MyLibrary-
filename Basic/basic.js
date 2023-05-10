@@ -941,3 +941,17 @@ const myForArray = [];
 for (let i = 1; i < 6; i++) {
     myForArray.push(i); // [1, 2, 3, 4, 5]
 }
+
+//Iterate Odd Numbers
+const parniArray = [];
+
+for (let i = 0; i < 10; i += 2) {
+    parniArray.push(i);
+}
+//0,2,4,6,8
+const neparniArray = [];
+
+// Only change code below this line
+for (let i = 1; i <= 9; i += 2) {
+    neparniArray.push(i);
+} //1,3,5,7,9
