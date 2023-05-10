@@ -955,3 +955,17 @@ const neparniArray = [];
 for (let i = 1; i <= 9; i += 2) {
     neparniArray.push(i);
 } //1,3,5,7,9
+//Count Backwards With a For Loop
+const backwardsArray = [];
+
+for (let i = 10; i > 0; i -= 2) {
+    backwardsArray.push(i);
+} //[10, 8, 6, 4, 2]
+// backwards odd
+const backwardsOddArray = [];
+
+// Only change code below this line
+
+for (var i = 9; i > 0; i -= 2) {
+    backwardsOddArray.push(i);
+}
